@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/night-sky1.jpeg");
+  background-color: #2d2e8b;
+}
+
+html {
+  color: white;
+}
+
+/* Header component */
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.7rem;
+}
+
+header h3 {
+  margin-bottom: 5px;
+}
+
+header span {
+  margin-left: 2rem;
+}
+
+/* MainTable component */
+
+.main-info {
+  display: flex;
+  justify-content: center;
+}
+
+.main-table {
+  width: 50%;
+  border: 1px solid cyan;
+  border-collapse: collapse;
+}
+
+.main-table th {
+  border-right: 1px solid cyan;
+  /* border: 1px solid cyan; */
+  border-collapse: collapse;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: fit-content;
+}
+
+.main-table td {
+  border: 1px solid cyan;
+  /* border-collapse: collapse;  */
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.name-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.name-cell.danger {
+  background-color: rgba(255, 165, 0, 0.4);
+}
+
+.see-button {
+  padding: 3px;
+  cursor: pointer;
+  background-color: rgb(172, 144, 107);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* AsteroidRecords component */
+
+.historic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.historic-info h1 {
+  margin-bottom: 1rem;
+}
+
+.second-table {
+  width: 30%;
+  border: 1px solid cyan;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.second-table th {
+  border-right: 1px solid cyan;
+  border-collapse: collapse;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.second-table td {
+  border: 1px solid cyan;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hide-button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-inline: 20px;
+  margin-bottom: 1rem;
+  background-color: rgb(172, 144, 107);
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* SPINNER */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.spinner {
+  width: 70px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .main-table {
+    width: 70%;
+  }
+
+  .second-table {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-table {
+    width: 80%;
+  }
+
+  .second-table {
+    width: 50%;
+  }
+
+  .historic-info h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h3 {
+    font-size: 0.9rem;
+  }
+
+  .main-table {
+    width: 90%;
+  }
+
+  .main-table th {
+    font-size: 0.7rem;
+  }
+
+  .main-table td {
+    font-size: 0.9rem;
+  }
+
+  .name-cell {
+    padding-left: 3px;
+    padding-right: 7px;
+    font-size: 0.7rem;
+  }
+
+  .second-table th {
+    font-size: 0.9rem;
+  }
+
+  .second-table td {
+    font-size: 0.9rem;
+  }
+
+  .historic-info h1 {
+    font-size: 1.1rem;
+  }
+}
